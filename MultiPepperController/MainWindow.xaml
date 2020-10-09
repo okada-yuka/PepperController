@@ -1,0 +1,28 @@
+﻿<Window x:Class="MultiPepperController.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiPepperController"
+        mc:Ignorable="d"
+        Title="MultiPepperController" Height="225.065" Width="311.676" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <Label x:Name="labelPort" Content="Port:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonServerStart" Content="Start" HorizontalAlignment="Left" Margin="145,13,0,0" VerticalAlignment="Top" Width="75" Click="buttonServerStart_Click"/>
+        <TextBox x:Name="textBoxPort" HorizontalAlignment="Left" Height="23" Margin="49,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" PreviewTextInput="textBoxPort_PreviewTextInput"/>
+        <Label x:Name="labelNum" Content="Num. of connection:" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonCommandAggpointing" Content="agg_pointing" Margin="0,66,0,0" VerticalAlignment="Top" Click="buttonCommandTest_Click" HorizontalAlignment="Left" Width="89"/>
+        <Button x:Name="buttonCommandEnd" Content="End" Margin="0,0,-0.8,-0.6" Click="buttonCommandEnd_Click" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="84"/>
+        <Button x:Name="buttonCommandSurprise" Content="Surprise" HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" Width="89" Click="buttonCommandSurprise_Click"/>
+        <Button x:Name="buttonCommandPointing" Content="Pointing" Margin="222,66,-0.8,0" VerticalAlignment="Top" Click="buttonCommandPointing_Click"/>
+        <Button x:Name="buttonCommandYeah" Content="Yeah" Margin="102,0,0,55.4" Click="buttonCommandYeah_Click" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="89"/>
+        <Button x:Name="buttonCommandStarepointing" Content="starepointing" HorizontalAlignment="Left" Margin="0,91,0,0" VerticalAlignment="Top" Width="89" Click="buttonCommandStarepointing_Click"/>
+        <Button x:Name="buttonCommandSlippointing" Content="slippointing" HorizontalAlignment="Left" Margin="222,91,0,0" VerticalAlignment="Top" Width="83" Click="buttonCommandSlippointing_Click"/>
+        <Button x:Name="buttonCommandStand" Content="Stand" Margin="222,116,-0.8,0" VerticalAlignment="Top" Click="buttonCommandStand_Click" HorizontalAlignment="Left" Width="84"/>
+        <Button x:Name="buttonCommandAll" Content="AllMotions" HorizontalAlignment="Left" Margin="116,66,0,0" VerticalAlignment="Top" Width="75" Height="48" Click="buttonCommandAll_Click"/>
+        <Button x:Name="buttonCommandWHsame" Content="WH_same" HorizontalAlignment="Left" Margin="0,149,0,0" VerticalAlignment="Top" Width="75" Click="buttonCommandWHsame_Click"/>
+        <Button x:Name="buttonCommandWHdiff" Content="WHdiff" HorizontalAlignment="Left" Margin="0,177,0,-0.6" VerticalAlignment="Top" Width="75" Click="buttonCommandWHdiff_Click"/>
+        <Button x:Name="buttonCommandAns" Content="Answer" HorizontalAlignment="Left" Margin="116,169,0,0" VerticalAlignment="Top" Width="75" Click="buttonCommandAns_Click"/>
+
+    </Grid>
+</Window>
